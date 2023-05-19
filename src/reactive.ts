@@ -3,7 +3,7 @@ import { isR, queue, isReactiveFunction } from './common'
 /**
  * Available types of keys for a reactive object.
  */
-export type DataSourceKey = string | number | symbol | null
+export type DataSourceKey =  number | symbol | null
 
 /**
  * Acceptable types of data targets for the reactive function.

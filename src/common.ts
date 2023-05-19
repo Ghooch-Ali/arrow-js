@@ -101,4 +101,4 @@ export function measure<T = unknown>(
   if (!measurements[label]) measurements[label] = [result]
   else measurements[label].push(result)
   return x
-}
+}  
