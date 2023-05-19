@@ -83,7 +83,7 @@ export function queue(fn: ObserverCallback): ObserverCallback {
 
 export const measurements: Record<string, number[]> = {}
 
-/**
+/** 
  * A simple benchmarking function.
  * @param label - A label for the measurement
  * @param fn - A function to measure or a number to record
@@ -92,7 +92,7 @@ export const measurements: Record<string, number[]> = {}
 export function measure<T = unknown>(
   label: string,
   fn: CallableFunction | number
-): T {
+): T { 
   const start = performance.now()
   const isFn = typeof fn === 'function'
   label = isFn ? `${label} (ms)` : `${label} (calls)`
